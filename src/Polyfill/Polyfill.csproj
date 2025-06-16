@@ -11,5 +11,7 @@
 
 		<Version>1.0</Version>
 		<Authors>Kirisoup</Authors>
+
+		<PackageOutputPath Condition="'$(PackDir)' != ''">$(PackDir)</PackageOutputPath>
 	</PropertyGroup>
 </Project>
