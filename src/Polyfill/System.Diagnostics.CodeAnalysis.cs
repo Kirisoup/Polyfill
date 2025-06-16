@@ -62,9 +62,6 @@ public sealed class StringSyntaxAttribute : Attribute
 [ExcludeFromCodeCoverage]
 public sealed class UnscopedRefAttribute : Attribute;
 
-
-#if NET48
-
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, Inherited = false)]
 [ExcludeFromCodeCoverage]
 public sealed class AllowNullAttribute : Attribute;
@@ -144,5 +141,3 @@ public sealed class NotNullWhenAttribute(bool returnValue) : Attribute
 {
 	public bool ReturnValue { get; } = returnValue;
 }
-
-#endif

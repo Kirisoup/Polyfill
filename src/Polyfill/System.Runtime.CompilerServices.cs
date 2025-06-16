@@ -69,8 +69,6 @@ public sealed class RequiredMemberAttribute : Attribute;
 [ExcludeFromCodeCoverage]
 public sealed class RequiresLocationAttribute : Attribute;
 
-#if NET48
-
 [AttributeUsage(
 	AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | 
 	AttributeTargets.Method | AttributeTargets.Interface | AttributeTargets.Delegate, 
@@ -115,5 +113,3 @@ public sealed class ModuleInitializerAttribute : Attribute;
 	AttributeTargets.Event | AttributeTargets.Interface, Inherited = false)]
 [ExcludeFromCodeCoverage]
 public sealed class SkipLocalsInitAttribute : Attribute;
-
-#endif

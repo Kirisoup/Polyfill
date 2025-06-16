@@ -1,5 +1,3 @@
-#if NET48
-
 namespace System.Runtime.Versioning;
 
 [AttributeUsage(
@@ -16,5 +14,3 @@ public sealed class RequiresPreviewFeaturesAttribute : Attribute
 	public string? Message { get; }
 	public string? Url { get; set; }
 }
-
-#endif

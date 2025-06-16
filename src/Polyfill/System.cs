@@ -1,5 +1,3 @@
-#if NET48
-
 namespace System;
 
 [ExcludeFromCodeCoverage]
@@ -105,5 +103,3 @@ public readonly struct Range(Index start, Index end) : IEquatable<Range>
 			throw new ArgumentOutOfRangeException("length");
 	}
 }
-
-#endif
